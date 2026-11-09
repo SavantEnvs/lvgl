@@ -1,0 +1,8 @@
+project: savantenvs/lvgl
+target: fuzz_image_lvimg
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_image_lvimg/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_image_lvimg
+    libfuzzer: true
